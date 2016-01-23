@@ -71,7 +71,6 @@ group :production do
 end
 
 group :development, :test do
-  # Call 'binding.pry' anywhere in the code to stop execution and get a debugger console
   gem 'pry'
   gem "letter_opener"
   gem 'bullet'
