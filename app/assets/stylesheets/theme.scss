@@ -2,7 +2,7 @@ $maroon: #800000;
 $white: #fff;
 
 @mixin background($url, $center: center) {
-  background: url($url) no-repeat $center $center;
+  background: image-url($url) no-repeat $center $center;
 }
 
 @mixin default-background($url){
