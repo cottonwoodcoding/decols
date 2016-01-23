@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :contact
 
   get 'locations', to: 'contact#locations'
+  post 'contact_request', to: 'contact#request_info'
 end

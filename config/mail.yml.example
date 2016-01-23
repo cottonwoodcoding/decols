@@ -1,0 +1,4 @@
+MAIL_FROM: 'Where mail comes from'
+MAIL_TO: 'Where mail goes to'
+GMAIL_USERNAME: ""
+GMAIL_PASSWORD: ""

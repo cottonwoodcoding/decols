@@ -12,3 +12,4 @@
 !/log/.keep
 /tmp
 config/instagram.yml
+config/mail.yml
