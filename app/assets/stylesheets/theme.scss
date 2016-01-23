@@ -1,0 +1,62 @@
+$maroon: #800000;
+$white: #fff;
+
+@mixin background($url, $center: center) {
+  background: url($url) no-repeat $center $center;
+}
+
+@mixin default-background($url){
+  @include background($url);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+@mixin custom-background($url) {
+  @include background($url, 0);
+}
+
+@mixin grad($color1, $color2) {
+  background: $color1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(bottom left, $color1 25%, $color2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top right, $color1 25%, $color2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top right, $color1 25%, $color2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(top right, $color1 25%, $color2); /* Standard syntax */
+}
+
+@mixin grad-down($color1, $color2) {
+  background: $color1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($color1, $color2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top right, $color1, $color2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top right, $color1, $color2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(top right, $color1, $color2); /* Standard syntax */
+}
+
+@mixin no-bottom {
+  margin-bottom: 0 !important;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Montserrat' !important;
+}
+
+main {
+  flex: 1 0 auto;
+  @include grad-down(#000, #212121);
+}
+
+.default-nav {
+  background-color: black;
+}
+
+.one-hundred-percent {
+  height: 100%;
+}

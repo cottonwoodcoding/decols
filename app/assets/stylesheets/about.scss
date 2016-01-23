@@ -1,0 +1,24 @@
+.about-nav {
+  @include grad(#fff, #000);
+}
+
+.panel-content{
+  max-height: 200px;
+  min-height: 200px;
+  overflow: scroll;
+  font-size: 18px;
+}
+
+.about-img {
+  @include custom-background("profile.png");
+  height: 600px;
+  box-shadow: 0 0 10px 10px white inset;
+  background-color: white;
+  margin-top: 25px;
+}
+
+.about-content {
+  height: 600px;
+  margin-top: 25px;
+  padding: 10px 10px;
+}

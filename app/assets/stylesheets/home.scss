@@ -1,0 +1,46 @@
+$home_url: 'cover.png';
+
+.first-panel-content {
+  background-color: $maroon !important;
+  @include default-background($home_url);
+  @include no-bottom;
+}
+
+.home-nav {
+  @include grad($maroon, #000);
+}
+
+.motto {
+  margin-left: 50px;
+  width: 30%;
+  margin-bottom: 10%;
+  font-size: 60px;
+  color: white;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,.6);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.intro {
+  background-color: $maroon;
+}
+
+#about {
+  h1 {
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+.social-links {
+  cursor: pointer;
+  i {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.large-font {
+  font-size: 45px;
+}

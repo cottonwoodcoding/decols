@@ -1,0 +1,30 @@
+%h3.center.white-text Contact
+= react_component 'Locations'
+.row
+  #hours.col.s12.m4
+    .card.grey.darken-3.z-depth-4
+      .card-content.white-text
+        %ul.collection.with-header
+          %li.collection-header.grey
+            %h4.center Hours
+          %li.grey.collection-item
+            Mon: 8:AM - 5:PM
+          %li.grey.collection-item
+            Tue: 8:AM - 5:PM
+          %li.grey.collection-item
+            Wed: 8:AM - 5:PM
+          %li.grey.collection-item
+            Thu: 8:AM - 5:PM
+          %li.grey.collection-item
+            Fri: 8:AM - 5:PM
+          %li.grey.collection-item
+            Sat: By Appointment
+          %li.grey.collection-item
+            Sun: Closed
+  #contact.col.s12.m8
+    %h5.white-text.center Questions / Comments
+    = form_for :contact, url: 'contact_request' do |f|
+      = f.text_field :name, { class: 'white-text', required: true, placeholder: 'Name' }
+      = f.email_field :email, { class: 'white-text', required: true, placeholder: 'Email' }
+      = f.text_area :content, { class: 'one-hundred-percent white-text', required: true, rows: 10 }
+      = f.submit :submit, { class: 'btn black' }

@@ -1,0 +1,18 @@
+.first-panel-content.row
+  .home-motto.valign-wrapper
+    %h5.motto.valign.center Logo Placeholder
+  .row
+    .col.s12.m6.hide-on-small-only
+      %a.right{href: '#about'}
+        = fa_icon('chevron-down inverse 3x')
+    .social-links.white-text.col.s12.m6.center
+      %a.white-text.large-font{href: 'tel:8018333272'} (801) 833-3272
+      %a.white-text{href: 'https://www.instagram.com/decols_speed_shop/', target: '_blank'}
+        = fa_icon 'instagram 3x'
+      %a.white-text{href: 'https://www.facebook.com/Decolsspeedshop/', target: '_blank'}
+        = fa_icon 'facebook 3x'
+#about.intro.row
+  .col.s12
+    %h1.center WHAT WE DO
+    = react_component 'About', { admin: @admin }
+
