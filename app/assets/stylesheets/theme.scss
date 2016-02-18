@@ -11,6 +11,9 @@ $green: #556b2f;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  @media (max-width: 600px) {
+    background-attachment: scroll;
+  }
 }
 
 @mixin custom-background($url) {
