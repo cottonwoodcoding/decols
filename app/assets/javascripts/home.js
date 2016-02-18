@@ -11,8 +11,8 @@ $(document).ready( function() {
         if (img.complete) {
             clearInterval(int);
             document.getElementById('main').style.backgroundImage = 'url(' + img.src + ')';
-            $('.home-motto').removeClass('overlay');
+            //$('.home-motto').removeClass('overlay');
         }
-    }, 50);
+    }, 5);
   });
 });
