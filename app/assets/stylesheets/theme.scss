@@ -65,3 +65,8 @@ main {
 .fa-bars {
   color: black;
 }
+
+
+.overlay {
+    background: rgba(0,0,0,.5) image-url('spinner.gif') center center no-repeat;
+}
