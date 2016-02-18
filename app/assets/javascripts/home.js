@@ -4,7 +4,6 @@ $(document).ready( function() {
     type: 'GET',
     dataType: 'JSON'
   }).done( function(data) {
-    $('.home-motto').removeClass('overlay');
     var img = new Image();
         img.src = data.path;
 
@@ -12,6 +11,7 @@ $(document).ready( function() {
         if (img.complete) {
             clearInterval(int);
             document.getElementById('main').style.backgroundImage = 'url(' + img.src + ')';
+            $('.home-motto').removeClass('overlay');
         }
     }, 50);
   });
