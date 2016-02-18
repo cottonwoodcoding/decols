@@ -23,8 +23,8 @@ class Locations extends React.Component{
     handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
     markers = handler.addMarkers([
       {
-        "lat": 40.5063358,
-        "lng": -111.9406609,
+        "lat": 40.5045503,
+        "lng": -111.9369949,
         "picture": {
           "width":  32,
           "height": 32
