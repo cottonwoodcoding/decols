@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   resources :contact
 
   get 'locations', to: 'contact#locations'
+  get 'image_path', to: 'home#cover_image'
   post 'contact_request', to: 'contact#request_info'
 end
