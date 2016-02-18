@@ -1,0 +1,6 @@
+Image Loader
+Account Set up
+Admin login
+Footer Branding
+Style Flash messages
+Insert Logos

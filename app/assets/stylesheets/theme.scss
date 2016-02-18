@@ -1,5 +1,7 @@
 $maroon: #800000;
+$cream: #F9F1DC;
 $white: #fff;
+$green: #556b2f;
 
 @mixin background($url, $center: center) {
   background: image-url($url) no-repeat $center $center;
@@ -59,4 +61,8 @@ main {
 
 .one-hundred-percent {
   height: 100%;
+}
+
+.fa-bars {
+  color: black;
 }
