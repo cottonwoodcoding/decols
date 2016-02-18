@@ -8,7 +8,6 @@ $green: #556b2f;
 }
 
 @mixin default-background($url){
-  @include background($url);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
