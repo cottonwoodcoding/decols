@@ -10,7 +10,8 @@ $(document).ready( function() {
     var int = setInterval(function() {
         if (img.complete) {
             clearInterval(int);
-            document.getElementById('main').style.backgroundImage = 'url(' + img.src + ')';
+            if (document.getElementById('main'))
+              document.getElementById('main').style.backgroundImage = 'url(' + img.src + ')';
             //$('.home-motto').removeClass('overlay');
         }
     }, 5);

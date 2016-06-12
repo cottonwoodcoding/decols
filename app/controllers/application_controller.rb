@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_action :nav_class, :admin
 
   def nav_class
-    navs = %w(home about gallery contact)
+    navs = %w(home about gallery contact vendor)
     if navs.include?(params[:controller])
       @nav_class = "#{params[:controller]}-nav"
     else

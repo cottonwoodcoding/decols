@@ -1,3 +1,7 @@
+.vendor-nav {
+  @include grad(#fff, #000);
+}
+
 .boxed {
   max-width: 250px;
   display: block;
