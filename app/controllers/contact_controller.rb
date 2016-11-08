@@ -11,7 +11,7 @@ class ContactController < ApplicationController
   def request_info
     contact = params[:contact]
     begin
-      ContactMailer.contact(contact[:name], contact[:email], contact[:content])
+      ContactMailer.contact(contact[:name], contact[:email], contact[:content]).deliver
       flash[:notice] = "Your message has been sent"
     rescue => e
       logger.error e.message
